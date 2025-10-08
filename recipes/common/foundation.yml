@@ -94,8 +94,6 @@ modules:
         # System
         - libva-utils
         - dbus-tools
-        - xdg-user-dirs
-        - dbus-daemon
         - zstd
         # File Managers
         - yazi
@@ -140,10 +138,8 @@ modules:
         - ripgrep
         - lsd
         - bat
-        - fd-find
         - sassc
         - gtk-murrine-engine
-        - playerctl
         - mediainfo
         - alsa-firmware
         - ddcutil
@@ -169,7 +165,6 @@ modules:
         - ffmpeg
         - ffmpeg-libs
         - ffmpegthumbnailer
-        - pipewire-libs-extra
         - libfdk-aac
         - gstreamer1-plugins-ugly
     remove:
