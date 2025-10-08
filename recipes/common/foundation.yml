@@ -110,6 +110,7 @@ modules:
         # Virtualization
         - qemu-audio-spice
         - qemu-char-spice
+        - qemu-kvm
         - qemu-device-display-virtio-gpu
         - qemu-device-display-virtio-vga
         - qemu-device-display-qxl
@@ -198,6 +199,9 @@ modules:
     user:
       enabled:
         - flatpak-setup-gtk-theme.service
+    system:
+      enabled:
+        - libvirtd.service
 
   - type: script
     scripts:
