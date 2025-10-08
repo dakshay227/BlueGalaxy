@@ -196,9 +196,6 @@ modules:
       - settheming.sh
 
   - type: systemd
-    user:
-      enabled:
-        - flatpak-setup-gtk-theme.service
     system:
       enabled:
         - libvirtd.service
