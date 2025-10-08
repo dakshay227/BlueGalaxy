@@ -1,0 +1,7 @@
+modules:
+  - type: script
+    scripts:
+      - config-for-trivalent.sh
+      - installanydesk.sh
+      - removeunusedrepos.sh
+      - regenerateinitramfs.sh

@@ -1,0 +1,11 @@
+modules:
+  - type: default-flatpaks
+    configurations:
+        - notify: true
+          scope: system
+          install:
+            - org.gnome.Papers
+            - com.bitwarden.desktop 
+            - io.github.flattool.Warehouse
+            - io.ente.auth
+        - scope: user
