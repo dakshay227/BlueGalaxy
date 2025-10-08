@@ -86,14 +86,11 @@ modules:
         # Network
         - openssl
         - firewall-config
-        # Audio
-        - pipewire-libs-extra        
         # Video
         - mpv
         - mpv-libs
         # System
         - libva-utils
-        - dbus-tools
         - zstd
         # File Managers
         - yazi
