@@ -5,3 +5,5 @@ modules:
       - installanydesk.sh
       - removeunusedrepos.sh
       - regenerateinitramfs.sh
+      - remove-sudo.sh
+      - removesuid.sh
