@@ -28,6 +28,8 @@ modules:
         - ublue-os/packages
     install:
       packages:
+        - zstd
+        - uupd
         - ublue-os-udev-rules
         - ublue-os-update-services
         - ublue-os-signing
@@ -40,7 +42,6 @@ modules:
   - type: script
     scripts:
       - installandroidudev.sh
-      - ensureautoupdates.sh
       - fixupstreamicdloaderbug.sh
       - addimageinfo.sh
 
@@ -82,6 +83,8 @@ modules:
         - ghostty
         # Shell
         - zsh
+        - zsh-autosuggestions 
+        - zsh-syntax-highlighting
         # Editor
         - vim
         - neovim
@@ -97,7 +100,6 @@ modules:
         # System
         - run0edit
         - libva-utils
-        - zstd
         # File Managers
         - yazi
         # Graphics
@@ -205,7 +207,7 @@ modules:
     system:
       enabled:
         - libvirtd.service
-
+        - uupd.timer
   - type: script
     scripts:
       - addbrewjustimport.sh
