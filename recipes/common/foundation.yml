@@ -58,6 +58,9 @@ modules:
         - fedora-logos
         - fedora-chromium-config
         - fedora-flathub-remote
+        - cosmic-files
+        - cosmic-term
+        - cosmic-edit
     optfix:
       - zen
     repos:
@@ -83,8 +86,6 @@ modules:
         - ghostty
         # Shell
         - zsh
-        - zsh-autosuggestions 
-        - zsh-syntax-highlighting
         # Editor
         - vim
         - neovim
@@ -160,7 +161,11 @@ modules:
         - Roboto
         - Open Sans
         - InterVariable
+
   - type: script
+    snippets:
+    - "ya pkg add Rolv-Apneseth/starship"
+    - "ya pkg add BennyOe/tokyo-night"
     scripts:
       - installproprietarypackages.sh
 
@@ -208,6 +213,7 @@ modules:
       enabled:
         - libvirtd.service
         - uupd.timer
+
   - type: script
     scripts:
       - addbrewjustimport.sh
